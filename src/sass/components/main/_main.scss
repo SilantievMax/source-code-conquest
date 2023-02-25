@@ -1,0 +1,95 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 768px;
+    background-image: url("../images/Ellipse.webp");
+    background-repeat: no-repeat;
+    background-position: 55% 1px;
+    &__heading {
+        position: relative;
+        font-family: 'PlayfairDisplay-Regular';
+        font-size: 45px;
+        line-height: 60px;
+        color: #1B1A17;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 31px;
+            left: -67px;
+            display: block;
+            width: 50px;
+            background-color: #8B8371;
+            border: 1px solid #8B8371;
+        }
+        span {
+            font-size: 30px;
+            line-height: 40px;
+            margin-top: 16px;
+        }
+    }
+    &__description {
+        font-family: 'Roboto-Light';
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(27, 26, 23, 0.82); 
+        margin-top: 39px;
+    }
+    &__btn-link {
+        background-color: #444240;
+        display: inline-block;
+        padding: 27px 38px;
+        font-family: 'Roboto-Medium';
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 64px;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: #51504f;
+        }
+    }
+    &__block-right {
+        position: relative;
+        height: 804px;
+    }
+    &__price, &__diameter {
+        position: absolute;
+        font-family: 'Prata-Regular';
+        font-size: 16px;
+        line-height: 22px;
+        color: #1B1A17;
+    }
+    &__price{
+        top: 147px;
+        left: -49px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: 93px;
+            display: block;
+            width: 50px;
+            background-color: #8B8371;
+            border: 1px solid #8B8371;
+        }
+    }
+    &__diameter {
+        bottom: 143px;
+        right: -78px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: -65px;
+            display: block;
+            width: 50px;
+            background-color: #8B8371;
+            border: 1px solid #8B8371;
+        }
+    }
+}
+

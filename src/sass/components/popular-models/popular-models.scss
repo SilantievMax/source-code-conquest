@@ -1,0 +1,91 @@
+.popular {
+    padding-top: 79px;
+    padding-bottom: 86px;
+    &__heading {
+        font-family: 'PlayfairDisplay-Regular';
+        text-align: center;
+        font-size: 32px;
+        line-height: 43px;
+        color: #1B1A17;
+    }
+    &__all-link {
+        font-family: 'Roboto-Medium';
+        position: relative;
+        display: block;
+        font-size: 16px;
+        line-height: 19px;
+        color: #444240; 
+        text-align: right;
+        transition: color .3s;
+        &:hover {
+            color: #746e68
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -11px;
+            width: 101px;
+            background-color: #C4C0B6;
+            border: 1px solid #C4C0B6;
+        }       
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+        margin-top: 37px;
+    }
+    &__item {
+        max-width: 370px;
+        padding: 40px 28px;
+    }
+    &__name {
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(27, 26, 23, 0.82);
+        margin-left: 5px;
+    }
+    &__price {
+        font-family: 'Prata-Regular';
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(27, 26, 23, 0.82);
+        margin-left: 5px;
+    }
+    &__img {
+        max-width: 290px;
+        background: #fff;
+        border-radius: 50%;
+        border-right: 1px solid #E2D0C4;
+    }
+    &__detailed-link {
+        position: relative;
+        font-family: 'PlayfairDisplay-Regular';
+        font-size: 16px;
+        line-height: 21px;
+        color: #1B1A17;
+        margin-left: 46px;
+        transition: color .3s;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: -44px;
+            display: block;
+            width: 30px;
+            background-color: #8B8371;
+            border: 1px solid #8B8371;
+            transition: left .3s;
+        }
+        &:hover::before {
+            left: -40px;
+        }
+        &:hover {
+            color: #767064
+        }
+    }
+}

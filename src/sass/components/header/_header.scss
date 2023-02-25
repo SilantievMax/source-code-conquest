@@ -1,0 +1,85 @@
+.header {
+   padding-top: 31px;
+   padding-bottom: 28px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        max-height: 26px;
+    }
+    &__list {
+        display: flex;
+        font-size: 14px;
+        line-height: 16px;
+        color: #555248;
+    }
+    &__item {
+        transition: color .3s;
+        &:not(:last-child) {
+            margin-right: 65px;
+        }
+        &:hover {
+            color: #252213
+        }
+    }
+
+    &__icons {
+
+    }
+
+    &__icon-link:not(:last-child) {
+        margin-right: 23px;
+    }
+
+    &__icon-link {
+        display: inline-block;
+        box-sizing: content-box;
+        width: 19px;
+        height: 16px;
+        transition: opacity .3s;
+        &:hover {
+            opacity: 0.8;
+        }
+        &_ico1 {
+            background-image: url(../images/svg/search.svg);
+            background-size: 16px 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &_ico2 {
+            background-image: url(../images/svg/heart.svg);
+            background-size: 19px 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+            &::after {
+                content: "1";
+                font-size: 8px;
+                line-height: 9px;
+                text-align: center;
+                line-height: 14px;
+                color: #1B1A17;
+                background-color: #E6C8B4;
+                display: inline-block;
+                border-radius: 50%;
+                width: 13px;
+                height: 13px;
+                position: absolute;
+                top: -6px;
+                right: -7px;
+            }
+        }
+        &_ico3 {
+            background-image: url(../images/svg/basket.svg);
+            background-size: 19px 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

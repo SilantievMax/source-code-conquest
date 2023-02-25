@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('components/common/head.html', { title: "CONQUEST" })
+  </head>
+  <body>
+    @@include('components/common/header.html')
+
+    <main>
+      <div class="wrapper">
+        @@include('components/main.html') 
+        @@include('components/popular-models.html')
+      </div>
+      @@include('components/catalog.html')
+      <div class="wrapper">
+        @@include('components/news.html')
+      </div>
+    </main>
+    @@include('components/common/footer.html')
+  </body>
+</html>
